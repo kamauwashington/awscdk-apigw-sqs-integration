@@ -1,8 +1,12 @@
 {
-  "name": "apigw-sqs-cdk",
+  "name": "awscdk-apigw-sqs-integration",
   "author": "Kamau Washington",
   "license": "MIT",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kamauwashington/awscdk-apigw-sqs-integration.git"
+  },
   "bin": {
     "apigw-sqs-cdk": "bin/apigw-sqs-cdk.js"
   },
