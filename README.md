@@ -33,5 +33,4 @@ This project does not use the standard environment in code solution seen often a
     * On Mac -> Press <kbd>&#8984;</kbd> + <kbd>K</kbd> then <kbd>&#8984;</kbd> + <kbd>/</kbd> 
     * On Windows & Linux -> Press <kbd>Ctrl</kbd> + <kbd>K</kbd> then <kbd>Ctrl</kbd> + <kbd>/</kbd> 
 * Generally one would use Constructs to create reusable functionality. In this repository they are used for organization
-and readability of the code base. There are many available examples that illustrate a large stack completely in the constructor of the stack alone. 
-Seems hard to maintain ¯\\\_(ツ)_/¯
+and readability of the code base. There are many available examples that illustrate a large stack completely in the constructor of the stack alone. I wanted to explore a deconstructed configuration in this round.
