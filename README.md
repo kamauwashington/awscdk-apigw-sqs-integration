@@ -1,4 +1,4 @@
-# API Gateway SQS Integration w/ AWSCDK 2.0
+# API Gateway SQS Integration w/ AWS CDK 2.0
 
 > This repository is purely for reference and is illustrative in it is purpose. This is one of the many ways of achieving this type of integration.
 
