@@ -25,7 +25,7 @@ Before you continue, ensure you have met the following requirements:
 
 This project does not use the standard environment in code solution seen often and opts for AWS profiles instead.
 
-* run **cdk deploy --profile <your profile name>** if you have defined a non default profile in the **~/.aws** files
+* run **cdk deploy --profile \<your profile name\>** if you have defined a non default profile in the **~/.aws** files
 * run **cdk deploy** if you have defined a default profile and would wish to use it
 ## Notes
 
