@@ -37,7 +37,7 @@ export class SQSApiGatewayRole extends Construct {
     });
 
     /**
-     * Create a role that can me assumed by API Gateway to integrate with the SQS Queue
+     * Create a role that can be assumed by API Gateway to integrate with the SQS Queue
      */
     const role = new iam.Role(this, "APIGWtoSQSExampleRole", {
       assumedBy: new iam.ServicePrincipal("apigateway.amazonaws.com"),
