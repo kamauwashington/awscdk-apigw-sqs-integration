@@ -26,11 +26,11 @@ Before you continue, ensure you have met the following requirements:
 This project does not use the standard environment in code solution seen often and opts for AWS profiles instead.
 
 * run **cdk deploy --profile \<your profile name\>** if you have defined a non default profile in the **~/.aws** files
-* run **cdk deploy** if you have defined a default profile and would wish to use it
+* run **cdk deploy** if you have defined a default profile, or have AWS environment variables set 
 ## Notes
 
 * This repository is heavily commented to provide context as to what and why, if in VS Code feel free to collapse all comments if they are obtrusive
     * On Mac -> Press <kbd>&#8984;</kbd> + <kbd>K</kbd> then <kbd>&#8984;</kbd> + <kbd>/</kbd> 
     * On Windows & Linux -> Press <kbd>Ctrl</kbd> + <kbd>K</kbd> then <kbd>Ctrl</kbd> + <kbd>/</kbd> 
 * Generally one would use Constructs to create reusable functionality. In this repository they are used for organization
-and readability of the code base. There are many available examples that illustrate a large stack completely in the constructor of the stack alone. I wanted to explore a deconstructed configuration in this round.
+and readability of the code base. There are many available examples that illustrate a large stack completely in the constructor of the stack alone. I wanted to explore a deconstructed configuration this round.
