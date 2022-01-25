@@ -27,6 +27,23 @@ This project does not use the standard environment in code solution seen often a
 
 * run **cdk deploy --profile \<your profile name\>** if you have defined a non default profile in the **~/.aws** files
 * run **cdk deploy** if you have defined a default profile, or have AWS environment variables set 
+
+## Verifying Deployment
+
+Assuming everything runs smoothly during stack deployment, it is fairly easy to verify that the solution is working. Upon 
+the deployment finishing, you the URI of the endpoint will be displayed in the console.
+
+* Use postman, curl, VSCode or other tooling to POST the following JSON to that endpoint
+
+```Javascript
+{
+    "latitude" : 33.8337,
+    "longitude" : -84.1450
+}
+```
+
+* View the created SQS queue, there should be an entry with the data from the POST above
+
 ## Notes
 
 * This repository is heavily commented to provide context as to what and why, if in VS Code feel free to collapse all comments if they are obtrusive

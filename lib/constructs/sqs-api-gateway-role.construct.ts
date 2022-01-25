@@ -23,6 +23,7 @@ export class SQSApiGatewayRole extends Construct {
      * create a policy statement that allows sending messages to the message queue
      */
     const policyStatement = new iam.PolicyStatement({
+      // you can find the full list of SQS actions here https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsqs.html
       actions: ["sqs:SendMessage"],
       effect: iam.Effect.ALLOW,
       resources: [props.messageQueue.queueArn],
