@@ -31,7 +31,7 @@ This project does not use the standard environment in code solution seen often a
 ## Verifying Deployment
 
 Assuming everything runs smoothly during stack deployment, it is fairly easy to verify that the solution is working. Upon 
-the deployment finishing, you the URI of the endpoint will be displayed in the console.
+the deployment finishing, the URI of the endpoint will be displayed in the console.
 
 * Use postman, curl, VSCode or other tooling to POST the following JSON to that endpoint
 
