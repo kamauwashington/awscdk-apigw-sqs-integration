@@ -3,7 +3,7 @@
 > This repository is purely for reference and is illustrative in it is purpose. This is one of the many ways of achieving this type of integration.
 
 
-This project illustrates using the AWS CDK v2 to create an API Gateway endpoint that posts directly into an SQS Queue. A solutions seen often is API Gateway to
+This project illustrates using the AWS CDK v2 to create an API Gateway endpoint that posts directly into an SQS Queue. A solution seen often is API Gateway to
 Lambda to SQS, which as a pattern has its uses, however, this can be a lighter implementation if the requirements warrant it.
 
 This example contains request validation, simple VTL transformation as a response, and stack organization by Construct.
