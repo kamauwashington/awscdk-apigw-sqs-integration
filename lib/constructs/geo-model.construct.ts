@@ -25,28 +25,32 @@ export class GeoModel extends Construct {
      * 
      * https://json-schema.org/
      */
-    const geoModel = new apigw.Model(this, "geo-model-validator", {
-      restApi: props.restApi,
-      contentType: "application/json",
-      description: "Validates a set of coordinates",
-      modelName: "geoModel",
-      schema: {
-        type: apigw.JsonSchemaType.OBJECT,
-        required: ["latitude", "longitude"],
-        properties: {
-          latitude: {
-            type: apigw.JsonSchemaType.NUMBER,
-            minimum: -90,
-            maximum: 90,
-          },
-          longitude: {
-            type: apigw.JsonSchemaType.NUMBER,
-            minimum: -180,
-            maximum: 180,
-          },
-        },
-      },
-    });
+    const geoModel = new apigw.Model(this, 'geo-model-validator', {
+			restApi: props.restApi,
+			contentType: 'application/json',
+			description: 'Validates a set of coordinates',
+			modelName: 'geoModel',
+			schema: {
+				type: apigw.JsonSchemaType.OBJECT,
+				required: ['latitude', 'longitude', 'userId'],
+				properties: {
+					userId: {
+						type: apigw.JsonSchemaType.STRING,
+						pattern: '^[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}$',
+					},
+					latitude: {
+						type: apigw.JsonSchemaType.NUMBER,
+						minimum: -90,
+						maximum: 90,
+					},
+					longitude: {
+						type: apigw.JsonSchemaType.NUMBER,
+						minimum: -180,
+						maximum: 180,
+					},
+				},
+			},
+		});
 
     this.model = geoModel;
   }

@@ -37,6 +37,7 @@ the deployment finishing, the URI of the endpoint will be displayed in the conso
 
 ```Javascript
 {
+    "userId" : "b64bbadd-7593-4e93-a83f-cb92a462c927",
     "latitude" : 33.8337,
     "longitude" : -84.1450
 }
